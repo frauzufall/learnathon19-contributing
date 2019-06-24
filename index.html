@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Contributing to Fiji</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Contributing to Fiji</h1>
+				</section>
+				<section>
+					<h2>Communication channels</h2>
+					<ul>
+						<li class="fragment">Forum</li>
+						<li class="fragment">Twitter</li>
+						<li class="fragment">Github</li>
+						<li class="fragment">Imagej.net Wiki</li>
+						<li class="fragment">Gitter</li>
+						<li class="fragment">Mailing list</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Forum</h2>
+					<p>discussions, announcements (events, jobs), examples, scientific discussions, issues...</p>
+					<div class="header header-left"><div>Communication channels</div></div>
+				</section>
+				<section>
+					<h2>Twitter</h2>
+					<p>anything but discussions (share link to discussion)</p>
+					<p>! not transparent, not sustainable</p>
+					<div class="header header-left"><div>Communication channels</div></div>
+				</section>
+				<section>
+					<h2>Github</h2>
+					<p>Issues which can be assigned to a specific repository, PRs, contributions</p>
+					<div class="header header-left"><div>Communication channels</div></div>
+				</section>
+				<section>
+					<h2>Imagej.net Wiki</h2>
+					<p>Documentation (update sites, plugins, architecture, events, ..)</p>
+					<div class="header header-left"><div>Communication channels</div></div>
+				</section>
+				<section>
+					<h2>Gitter</h2>
+					<p>Development discussions, event live support</p>
+					<div class="header header-left"><div>Communication channels</div></div>
+				</section>
+				<section>
+					<h2>Mailing list</h2>
+					<p>?</p>
+					<div class="header header-left"><div>Communication channels</div></div>
+				</section>
+				<section>
+					<h2>Ways to contribute</h2>
+					<ul>
+						<li class="fragment">Communicating with the community</li>
+						<li class="fragment">Filing issues</li>
+						<li class="fragment">Sharing your own scripts and plugins</li>
+						<li class="fragment">Working on the core</li>
+						<li class="fragment">Teaching</li>
+						<li class="fragment">Funding</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Communicating with the community</h2>
+					<ul>
+						<li class="fragment">Using Fiji and giving feedback <span class="fragment">(actively or via statistics)</span></li>
+						<li class="fragment">Sharing work in progress</li>
+					</ul>
+					<div class="header header-left"><div>Ways to contribute</div></div>
+				</section>
+				<section>
+					<h2>Filing issues / feature requests</h2>
+					<ul>
+						<li class="fragment">If you don't know where to file an issue, ask in the forum or on gitter</li>
+						<li class="fragment">Describe the steps to reproduce the issue, what you expected to happen and what happened instead</li>
+					</ul>
+					<div class="header header-left"><div>Ways to contribute</div></div>
+				</section>
+				<section>
+					<h2>Sharing your own scripts and plugins</h2>
+					<ul>
+						<li class="fragment">Use update sites</li>
+						<li class="fragment">Add documentation to imagej.net</li>
+						<li class="fragment">Announce on forum</li>
+					</ul>
+					<div class="header header-left"><div>Ways to contribute</div></div>
+				</section>
+				<section>
+					<h2>Working on the core / contributing to repositories of others</h2>
+					<ul>
+						<li class="fragment">Discuss nature / structure of changes early</li>
+						<li class="fragment">Add yourself as a developer / contributor in `pom.xml`</li>
+					</ul>
+					<div class="header header-left"><div>Ways to contribute</div></div>
+				</section>
+				<section>
+					<h2>Teaching</h2>
+					<ul>
+						<li class="fragment">Software Carpentry strategies</li>
+						<li class="fragment">use / improve imagej.net</li>
+						<li class="fragment">Come up with a better idea for imagej.net</li>
+					</ul>
+					<div class="header header-left"><div>Ways to contribute</div></div>
+				</section>
+				<section>
+					<h2>Funding</h2>
+					<ul>
+						<li class="fragment">Create positions for Research Software Engineers</li>
+						<li class="fragment">Support Software Carpentry training</li>
+					</ul>
+					<div class="header header-left"><div>Ways to contribute</div></div>
+				</section>
+			</div>
+		</div>
+
+		<div id="hidden" style="display:none;">
+	</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				transition: 'fade',
+				backgroundTransition: 'none',
+				fragmentInURL: true,
+				history: true,
+				width: "100%",
+				height: "100%",
+				margin: 0,
+				controlsTutorial: false,
+				display: "flex",
+				progress: false,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/menu/menu.js' }
+				],
+				menu: {
+					side: 'right',
+					titleSelector: 'h1, h2, h3, h4, h5, h6',
+					useTextContentForMissingTitles: true,
+					markers: false,
+
+					// Adds a menu button to the slides to open the menu panel.
+					// Set to 'false' to hide the button.
+					openButton: true,
+
+					// If 'true' allows the slide number in the presentation to
+					// open the menu panel. The reveal.js slideNumber option must
+					// be displayed for this to take effect
+					openSlideNumber: false,
+
+					// If true allows the user to open and navigate the menu using
+					// the keyboard. Standard keyboard interaction with reveal
+					// will be disabled while the menu is open.
+					keyboard: true,
+					// By default the menu will load it's own font-awesome library
+					// icons. If your presentation needs to load a different
+					// font-awesome library the 'loadIcons' option can be set to false
+					// and the menu will not attempt to load the font-awesome library.
+					loadIcons: true
+				}
+			});
+			/*var header = $('#header').html();
+			if ( window.location.search.match( /print-pdf/gi ) ) {
+				Reveal.addEventListener( 'ready', function( event ) {
+					$('.slide-background').append(header);
+				});
+			}
+			else {
+				$('div.reveal').append(header);
+			}*/
+		</script>
+		<link rel="stylesheet" href="css/mystyle.css">
+	</body>
+</html>
