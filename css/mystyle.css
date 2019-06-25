@@ -129,12 +129,6 @@ html.bg-margin div.slide-background.present {
 	height: 90%;
 }
 
-.reveal .slide-menu-button {
-	left: auto;
-	right: 51px;
-	bottom: 48px;
-}
-
 section video {
 	height: 80%;
 }
